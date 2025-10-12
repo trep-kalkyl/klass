@@ -1,0 +1,202 @@
+/*!
+ * KLASS - Kalkyldata Layers and Adaptive Style System
+ * Copyright (c) 2025 Kalkyldata
+ * Licensed under the MIT License
+ * https://opensource.org/licenses/MIT
+ */
+/*
+==============================================================================
+COMPLETE & FINAL KLASS RETRO FORM FIELDS SYSTEM
+==============================================================================
+File:           klass-formfields.css
+Version:        Final
+Description:    KLASS form fields system. Supports all standard Bootstrap
+                field classes and parallel .klass- prefixed variants.
+                Retro look, modern code, accessibility ready.
+==============================================================================
+*/
+
+/* 1. Text fields, textarea, select – Sunken style */
+.form-control, .klass-form-control,
+.form-select, .klass-form-select {
+    background: #ffffff;
+    color: #212529;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    transition: none;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 1rem;
+    box-shadow: inset 1px 1px 0 1px #888888, inset -1px -1px 0 1px #ffffff;
+}
+.form-control, .klass-form-control { padding: 6px 10px; }
+.form-select, .klass-form-select {
+    padding: 6px 36px 6px 10px;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath fill='%23212529' d='M0 0l5 6 5-6z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px 6px;
+}
+
+.form-control:focus, .klass-form-control:focus,
+.form-select:focus, .klass-form-select:focus {
+    border-color: transparent;
+    box-shadow: inset 1px 1px 0 1px #888888, inset -1px -1px 0 1px #ffffff;
+    outline: 1px dotted #212529;
+    outline-offset: -4px;
+}
+.form-control:disabled, .klass-form-control:disabled,
+.form-select:disabled, .klass-form-select:disabled {
+    color: #888888 !important;
+    background: #f0f0f0 !important;
+    box-shadow: inset 1px 1px 0 1px #888888 !important;
+    cursor: not-allowed;
+}
+textarea.form-control, textarea.klass-form-control {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* 2. Inputs with icons */
+.input-icon-group, .klass-input-icon-group { position: relative; }
+.input-icon-group .form-icon, .klass-input-icon-group .klass-form-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888888;
+    z-index: 2;
+}
+.input-icon-group .form-icon.icon-left, .klass-input-icon-group .klass-form-icon.klass-icon-left { left: 10px; }
+.input-icon-group .form-icon.icon-right, .klass-input-icon-group .klass-form-icon.klass-icon-right { right: 10px; cursor: pointer; }
+.form-control.has-left-icon, .klass-form-control.klass-has-left-icon { padding-left: 32px; }
+.form-control.has-right-icon, .klass-form-control.klass-has-right-icon { padding-right: 32px; }
+
+/* 3. Checkbox, radio, switch – Raised style */
+.form-check-input, .klass-form-check-input {
+    width: 16px; height: 16px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    appearance: none;
+    background: #f0f0f0;
+    box-shadow: inset 1px 1px 0 1px #ffffff, inset -1px -1px 0 1px #888888;
+    transition: none;
+    cursor: pointer;
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: none !important;
+}
+.form-check-input:checked, .klass-form-check-input:checked {
+    background-color: #f0f0f0;
+    border-color: transparent;
+    box-shadow: inset 1px 1px 0 1px #ffffff, inset -1px -1px 0 1px #888888;
+}
+.form-check-input:focus, .klass-form-check-input:focus {
+    outline: 1px dotted #212529;
+    outline-offset: 0;
+    box-shadow: inset 1px 1px 0 1px #ffffff, inset -1px -1px 0 1px #888888;
+}
+.form-check-input[type="checkbox"] { position: relative; }
+.form-check-input[type="checkbox"]::after, .klass-form-check-input[type="checkbox"]::after {
+    content: '';
+    position: absolute;
+    top: 2px; left: 4px;
+    width: 6px; height: 10px;
+    border: 2px solid transparent;
+    border-top: 0; border-left: 0;
+    transform: rotate(45deg);
+}
+.form-check-input[type="checkbox"]:checked::after, .klass-form-check-input[type="checkbox"]:checked::after {
+    border-color: #212529;
+    filter: drop-shadow(1px 1px 0px rgba(255,255,255,0.7));
+}
+.form-check-input[type="radio"], .klass-form-check-input[type="radio"] { border-radius: 50%; }
+.form-check-input[type="radio"]::after, .klass-form-check-input[type="radio"]::after {
+    content: '';
+    border-radius: 50%;
+    background: transparent;
+    width: 6px; height: 6px;
+}
+.form-check-input[type="radio"]:checked::after, .klass-form-check-input[type="radio"]:checked::after {
+    background: #212529;
+    filter: drop-shadow(1px 1px 0px rgba(255,255,255,0.7));
+}
+.form-check-input:hover, .klass-form-check-input:hover { background: #e8e8e8; }
+.form-check-input:active, .klass-form-check-input:active { box-shadow: inset 2px 2px 0 0 #888888; }
+.form-check-input:disabled, .klass-form-check-input:disabled {
+    background: #f0f0f0;
+    box-shadow: inset 1px 1px 0 1px #ffffff;
+    cursor: not-allowed;
+}
+.form-switch .form-check-input, .form-switch .klass-form-check-input {
+    width: 36px; height: 20px;
+    position: relative;
+}
+.form-switch .form-check-input::after, .form-switch .klass-form-check-input::after {
+    content: '';
+    position: absolute; top: 2px; left: 2px;
+    width: 14px; height: 16px; border-radius: 2px;
+    transition: none;
+    background: #f0f0f0;
+    box-shadow: inset 1px 1px 0 1px #ffffff, inset -1px -1px 0 1px #888888;
+}
+.form-switch .form-check-input:checked, .form-switch .klass-form-check-input:checked {
+    background-color: #0d6efd;
+    box-shadow: inset 1px 1px 0 1px #7bb4ff, inset -1px -1px 0 1px #003c9a;
+    background-image: none;
+}
+.form-switch .form-check-input:checked::after, .form-switch .klass-form-check-input:checked::after { left: 20px; }
+.form-switch .form-check-input:focus, .form-switch .klass-form-check-input:focus {
+    box-shadow: none;
+    outline: 1px dotted #212529;
+    outline-offset: 2px;
+}
+
+/* 4. Range / slider – Raised style */
+.form-range, .klass-form-range {
+    width: 100%;
+    background: transparent;
+    appearance: none;
+    padding: 6px 0;
+}
+.form-range:focus, .klass-form-range:focus {
+    box-shadow: none;
+    border-color: transparent;
+    outline: 1px dotted #212529;
+    outline-offset: -4px;
+}
+.form-range::-webkit-slider-runnable-track, .klass-form-range::-webkit-slider-runnable-track {
+    height: 6px;
+    background: #f0f0f0;
+    border-radius: 2px;
+    box-shadow: inset 1px 1px 0 1px #ffffff, inset -1px -1px 0 1px #888888;
+}
+.form-range::-moz-range-track, .klass-form-range::-moz-range-track {
+    height: 6px;
+    background: #f0f0f0;
+    border-radius: 2px;
+    box-shadow: inset 1px 1px 0 1px #ffffff, inset -1px -1px 0 1px #888888;
+}
+.form-range::-webkit-slider-thumb, .klass-form-range::-webkit-slider-thumb {
+    appearance: none;
+    width: 14px; height: 16px; margin-top: -5px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: none;
+    background: #f0f0f0;
+    box-shadow: inset 1px 1px 0 1px #ffffff, inset -1px -1px 0 1px #888888;
+}
+.form-range::-moz-range-thumb, .klass-form-range::-moz-range-thumb {
+    width: 14px; height: 16px;
+    border: none; border-radius: 2px;
+    cursor: pointer;
+    transition: none;
+    background: #f0f0f0;
+    box-shadow: inset 1px 1px 0 1px #ffffff, inset -1px -1px 0 1px #888888;
+}
+.form-range:active::-webkit-slider-thumb, .klass-form-range:active::-webkit-slider-thumb { box-shadow: inset 2px 2px 0 0 #888888; }
+.form-range:active::-moz-range-thumb, .klass-form-range:active::-moz-range-thumb { box-shadow: inset 2px 2px 0 0 #888888; }
+
+/* 5. General rules */
+.form-label { font-weight: 500; margin-bottom: 6px; }
