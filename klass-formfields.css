@@ -4,17 +4,6 @@
  * Licensed under the MIT License
  * https://opensource.org/licenses/MIT
  */
-/*
-==============================================================================
-COMPLETE & FINAL KLASS RETRO FORM FIELDS SYSTEM
-==============================================================================
-File:           klass-formfields.css
-Version:        Final
-Description:    KLASS form fields system. Supports all standard Bootstrap
-                field classes and parallel .klass- prefixed variants.
-                Retro look, modern code, accessibility ready.
-==============================================================================
-*/
 
 /* 1. Text fields, textarea, select – Sunken style */
 .form-control, .klass-form-control,
