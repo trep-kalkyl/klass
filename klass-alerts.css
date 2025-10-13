@@ -1,0 +1,71 @@
+/*!
+ * KLASS - Kalkyldata Layers and Adaptive Style System
+ * Copyright (c) 2025 Kalkyldata
+ * Licensed under the MIT License
+ * https://opensource.org/licenses/MIT
+ */
+
+/* Alert box styles */
+.alert, .klass-alert {
+  padding: 1rem 1.5rem;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  transition: none;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.alert-icon, .klass-alert-icon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.alert a, .klass-alert a {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.alert strong, .klass-alert strong {
+  margin-right: 0.35em;
+}
+
+/* Success variant */
+.alert-success, .klass-alert-success {
+  background-color: #d4edda;
+  color: #155724;
+  box-shadow: inset 1px 1px 0 1px #e9f3ea, inset -1px -1px 0 1px #b8d6be;
+}
+.alert-success a, .klass-alert-success a {
+  color: #0d3c19;
+}
+
+/* Danger variant */
+.alert-danger, .klass-alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+  box-shadow: inset 1px 1px 0 1px #fbe9ea, inset -1px -1px 0 1px #f1c2c5;
+}
+.alert-danger a, .klass-alert-danger a {
+  color: #491217;
+}
+
+/* Warning variant */
+.alert-warning, .klass-alert-warning {
+  background-color: #fff3cd;
+  color: #856404;
+  box-shadow: inset 1px 1px 0 1px #fff9e0, inset -1px -1px 0 1px #ffeeba;
+}
+.alert-warning a, .klass-alert-warning a {
+  color: #533f03;
+}
+
+/* Info variant */
+.alert-info, .klass-alert-info {
+  background-color: #d1ecf1;
+  color: #0c5460;
+  box-shadow: inset 1px 1px 0 1px #e2f2f5, inset -1px -1px 0 1px #bee5eb;
+}
+.alert-info a, .klass-alert-info a {
+  color: #062c33;
+}
