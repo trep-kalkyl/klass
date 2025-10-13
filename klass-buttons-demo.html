@@ -1,92 +1,130 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Klass Buttons Demo</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
     <!-- KLASS Buttons import via CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/trep-kalkyl/klass@5019e51435e80b6e84d74afda7cddd0516365b13/klass-buttons.css">
-     <style>
-      body {
-        background: #f7f6f3;
-        font-family: 'Inter', system-ui, sans-serif;
-        padding: 2rem;
-        color: #212529;
-      }
-      .section {
-        margin-bottom: 2rem;
-      }
-      .section p {
-        margin-bottom: 0.5rem;
-        color: #555;
-        font-size: 1rem;
-      }
-      .section .btn {
-        margin-right: 0.5rem;
-        margin-bottom: 0.5rem;
-      }
-    </style>
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/trep-kalkyl/klass@77a2bcd0273e1b34546e70474637418caf76fa54/klass-buttons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/trep-kalkyl/klass@54df0b526b7cc60f401548c9750fa4c1c5f8b5d0/klass-base.css"
+    />
+  </head>
+  <body>
     <div class="section">
-        <p><strong>Basic buttons:</strong> Standard types following Bootstrap conventions.</p>
-        <button type="button" class="btn btn-primary">Primary</button>
-        <button type="button" class="btn btn-secondary">Secondary</button>
-        <button type="button" class="btn btn-success">Success</button>
-        <button type="button" class="btn btn-danger">Danger</button>
-        <button type="button" class="btn btn-warning">Warning</button>
-        <button type="button" class="btn btn-info">Info</button>
-        <button type="button" class="btn btn-outline-secondary">Outline</button>
-        <button type="button" class="btn btn-link">Link</button>
+      <p>
+        <strong>Basic buttons:</strong> Standard types following Bootstrap
+        conventions.
+      </p>
+      <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-secondary">Secondary</button>
+      <button type="button" class="btn btn-success">Success</button>
+      <button type="button" class="btn btn-danger">Danger</button>
+      <button type="button" class="btn btn-warning">Warning</button>
+      <button type="button" class="btn btn-info">Info</button>
+      <button type="button" class="btn btn-outline-secondary">Outline</button>
+      <button type="button" class="btn btn-link">Link</button>
     </div>
 
     <div class="section">
-        <p><strong>Buttons with icon and text:</strong> Icon is placed before text.</p>
-        <button type="button" class="btn btn-primary d-inline-flex align-items-center">
-            <i class="fa-solid fa-floppy-disk me-2"></i> Save
-        </button>
-        <button type="button" class="btn btn-success d-inline-flex align-items-center">
-            <i class="fa-solid fa-check me-2"></i> Approve
-        </button>
-        <button type="button" class="btn btn-outline-secondary d-inline-flex align-items-center">
-            <i class="fa-solid fa-upload me-2"></i> Upload
-        </button>
+      <p>
+        <strong>Buttons with icon and text:</strong> Icon is placed before text.
+      </p>
+      <button
+        type="button"
+        class="btn btn-primary d-inline-flex align-items-center"
+      >
+        <i class="fa-solid fa-floppy-disk me-2"></i> Save
+      </button>
+      <button
+        type="button"
+        class="btn btn-success d-inline-flex align-items-center"
+      >
+        <i class="fa-solid fa-check me-2"></i> Approve
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline-secondary d-inline-flex align-items-center"
+      >
+        <i class="fa-solid fa-upload me-2"></i> Upload
+      </button>
     </div>
 
     <div class="section">
-        <p><strong>Icon only:</strong> Buttons showing only icon, e.g. for toolbars.</p>
-        <button type="button" class="btn btn-primary" aria-label="Add"><i class="fa-solid fa-plus"></i></button>
-        <button type="button" class="btn btn-danger" aria-label="Delete"><i class="fa-solid fa-trash-can"></i></button>
-        <button type="button" class="btn btn-outline-secondary" aria-label="Settings"><i class="fa-solid fa-gear"></i></button>
+      <p>
+        <strong>Icon only:</strong> Buttons showing only icon, e.g. for
+        toolbars.
+      </p>
+      <button type="button" class="btn btn-primary" aria-label="Add">
+        <i class="fa-solid fa-plus"></i>
+      </button>
+      <button type="button" class="btn btn-danger" aria-label="Delete">
+        <i class="fa-solid fa-trash-can"></i>
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        aria-label="Settings"
+      >
+        <i class="fa-solid fa-gear"></i>
+      </button>
     </div>
 
     <div class="section">
-        <p><strong>Sizes:</strong> Large, normal, and small buttons.</p>
-        <button type="button" class="btn btn-primary btn-lg">Large button</button>
-        <button type="button" class="btn btn-secondary">Normal button</button>
-        <button type="button" class="btn btn-danger btn-sm">Small button</button>
+      <p><strong>Sizes:</strong> Large, normal, and small buttons.</p>
+      <button type="button" class="btn btn-primary btn-lg">Large button</button>
+      <button type="button" class="btn btn-secondary">Normal button</button>
+      <button type="button" class="btn btn-danger btn-sm">Small button</button>
     </div>
 
     <div class="section">
-        <p><strong>Disabled buttons:</strong> Examples of buttons with <code>disabled</code> attribute.</p>
-        <button type="button" class="btn btn-primary" disabled>Primary</button>
-        <button type="button" class="btn btn-secondary" disabled>Secondary</button>
-        <button type="button" class="btn btn-success" disabled>Success</button>
-        <button type="button" class="btn btn-danger" disabled>Danger</button>
-        <button type="button" class="btn btn-outline-secondary" disabled>Outline</button>
-        <button type="button" class="btn btn-link" disabled>Link</button>
+      <p>
+        <strong>Disabled buttons:</strong> Examples of buttons with
+        <code>disabled</code> attribute.
+      </p>
+      <button type="button" class="btn btn-primary" disabled>Primary</button>
+      <button type="button" class="btn btn-secondary" disabled>
+        Secondary
+      </button>
+      <button type="button" class="btn btn-success" disabled>Success</button>
+      <button type="button" class="btn btn-danger" disabled>Danger</button>
+      <button type="button" class="btn btn-outline-secondary" disabled>
+        Outline
+      </button>
+      <button type="button" class="btn btn-link" disabled>Link</button>
     </div>
 
     <div class="section">
-        <p><strong>Block button:</strong> Button that fills the row.</p>
-        <button type="button" class="btn btn-success btn-lg d-flex align-items-center justify-content-center w-100" style="max-width:400px;">
-            <i class="fa-solid fa-right-to-bracket me-2"></i> Sign in to your account
-        </button>
+      <p><strong>Block button:</strong> Button that fills the row.</p>
+      <button
+        type="button"
+        class="btn btn-success btn-lg d-flex align-items-center justify-content-center w-100"
+        style="max-width:400px;"
+      >
+        <i class="fa-solid fa-right-to-bracket me-2"></i> Sign in to your
+        account
+      </button>
     </div>
-</body>
+  </body>
 </html>
