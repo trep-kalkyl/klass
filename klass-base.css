@@ -1,0 +1,14 @@
+/*!
+ * KLASS - Kalkyldata Layers and Adaptive Style System
+ * Copyright (c) 2025 Kalkyldata
+ * Licensed under the MIT License
+ * https://opensource.org/licenses/MIT
+ */
+body, .klass-body {
+  background: #f8f8f8;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 16px;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
