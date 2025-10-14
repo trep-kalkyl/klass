@@ -133,13 +133,13 @@
   /* Base style can be inherited from btn-close/klass-btn-close */
 }
 
+}
+
 .btn-close-red:hover,
 .btn-close-red:focus,
 .klass-btn-close-red:hover,
 .klass-btn-close-red:focus {
-  color: #b00020; /* KLASS danger red */
-  background: #ffe5e5;
-  border-color: #b00020;
-  outline: 2px dotted #b00020;
+  background: #b00020;
+  color: #fff;
   transition: none;
 }
