@@ -135,11 +135,11 @@
 
 }
 
-.btn-close-red:hover,
-.btn-close-red:focus,
-.klass-btn-close-red:hover,
-.klass-btn-close-red:focus {
+.btn-close-red:hover::after,
+.btn-close-red:focus::after,
+.klass-btn-close-red:hover::after,
+.klass-btn-close-red:focus::after {
+  color: #fff !important;
   background: #b00020 !important;
-  color: #fff;
   transition: none;
 }
