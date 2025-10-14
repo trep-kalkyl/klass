@@ -123,17 +123,23 @@
  * Ensures that the red hover effect is only applied in certain situations, not globally.
  */
 
-.klass-modal-close-hover-red .btn-close,
-.klass-modal-close-hover-red .klass-btn-close,
-.modal-close-hover-red .btn-close,
-.modal-close-hover-red .klass-btn-close {
-  /* neutral grundstil (ärvs från klass-btn-close.css) */
+/*
+ * Adds a red hover and focus effect to the close button.
+ * Use .btn-close-red or .klass-btn-close-red together with .btn-close or .klass-btn-close on any close button instance where you want red hover/focus.
+ * Does not affect other close buttons globally.
+ */
+
+.btn-close-red, .klass-btn-close-red {
+  /* Base style can be inherited from btn-close/klass-btn-close */
 }
-.klass-modal-close-hover-red .btn-close:hover,
-.klass-modal-close-hover-red .klass-btn-close:hover,
-.modal-close-hover-red .btn-close:hover,
-.modal-close-hover-red .klass-btn-close:hover {
-  color: #b00020;
+
+.btn-close-red:hover,
+.btn-close-red:focus,
+.klass-btn-close-red:hover,
+.klass-btn-close-red:focus {
+  color: #b00020; /* KLASS danger red */
   background: #ffe5e5;
   border-color: #b00020;
+  outline: 2px dotted #b00020;
+  transition: none;
 }
