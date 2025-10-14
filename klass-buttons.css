@@ -155,16 +155,10 @@
 .btn-close-red:focus,
 .klass-btn-close-red:hover,
 .klass-btn-close-red:focus {
-  background: #bb2d3b !important;  /* KLASS/Bootstrap danger hover */
+  background: #dc3545 !important;  /* KLASS/Bootstrap danger hover */
   color: #fff !important;
   border-color: #bb2d3b !important;
   outline: none;
   transition: none;
 }
 
-.btn-close-red:hover::after,
-.btn-close-red:focus::after,
-.klass-btn-close-red:hover::after,
-.klass-btn-close-red:focus::after {
-  color: #fff !important;
-}
