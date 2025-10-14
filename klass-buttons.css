@@ -139,7 +139,7 @@
 .btn-close-red:focus,
 .klass-btn-close-red:hover,
 .klass-btn-close-red:focus {
-  background: #b00020;
+  background: #b00020 !important;
   color: #fff;
   transition: none;
 }
