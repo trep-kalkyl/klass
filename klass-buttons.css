@@ -116,3 +116,24 @@
 }
 
 /* The close button style is shared for alerts, modals and other dismissible components. */
+
+/* 
+ * Adds red color and background to the close button on hover/focus
+ * when inside a modal context with .klass-modal-close-hover-red or .modal-close-hover-red.
+ * Ensures that the red hover effect is only applied in certain situations, not globally.
+ */
+
+.klass-modal-close-hover-red .btn-close,
+.klass-modal-close-hover-red .klass-btn-close,
+.modal-close-hover-red .btn-close,
+.modal-close-hover-red .klass-btn-close {
+  /* neutral grundstil (ärvs från klass-btn-close.css) */
+}
+.klass-modal-close-hover-red .btn-close:hover,
+.klass-modal-close-hover-red .klass-btn-close:hover,
+.modal-close-hover-red .btn-close:hover,
+.modal-close-hover-red .klass-btn-close:hover {
+  color: #b00020;
+  background: #ffe5e5;
+  border-color: #b00020;
+}
