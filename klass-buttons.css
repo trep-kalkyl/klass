@@ -134,14 +134,31 @@
   /* No override needed for base state; inherits from .btn-close/.klass-btn-close */
 }
 
+/*!
+ * KLASS - Kalkyldata Layers and Adaptive Style System
+ * Copyright (c) 2025 Kalkyldata
+ * Licensed under the MIT License
+ * https://opensource.org/licenses/MIT
+ */
+
+/*
+ * Red close button variant for KLASS.
+ * Use .btn-close-red or .klass-btn-close-red together with .btn-close or .klass-btn-close.
+ * On hover/focus: solid KLASS danger red background and white icon/text.
+ */
+
+.btn-close-red, .klass-btn-close-red {
+  /* Base style inherits from .btn-close/.klass-btn-close */
+}
+
 .btn-close-red:hover,
 .btn-close-red:focus,
 .klass-btn-close-red:hover,
 .klass-btn-close-red:focus {
-  background: #b00020 !important;
+  background: #bb2d3b !important;  /* KLASS/Bootstrap danger hover */
   color: #fff !important;
-  border-color: #b00020 !important;
-  outline: 2px dotted #fff;
+  border-color: #bb2d3b !important;
+  outline: none;
   transition: none;
 }
 
