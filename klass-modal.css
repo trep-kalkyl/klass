@@ -109,7 +109,7 @@ body, .klass-body {
 .modal-content, .klass-modal-content {
   border-radius: 2px;
   border: 1px solid transparent;
-  box-shadow: inset 1px 1px 0 1px #ffffff, inset -1px -1px 0 1px #888888;
+  box-shadow: inset 1px 1px 0 0px #ffffff, inset -1px -1px 0 0px #888888;
   background-color: #f0f0f0;
 }
 .modal-header, .klass-modal-header {
