@@ -30,7 +30,7 @@
 .form-control:focus, .klass-form-control:focus,
 .form-select:focus, .klass-form-select:focus {
     border-color: transparent;
-    box-shadow: inset 1px 1px 0 1px #888888, inset -1px -1px 0 1px #ffffff;
+    box-shadow: inset 1px 1px 0 0px #888888, inset -1px -1px 0 0px #ffffff;
     outline: 1px dotted #212529;
     outline-offset: -4px;
 }
@@ -38,7 +38,7 @@
 .form-select:disabled, .klass-form-select:disabled {
     color: #888888 !important;
     background: #f0f0f0 !important;
-    box-shadow: inset 1px 1px 0 1px #888888 !important;
+    box-shadow: inset 1px 1px 0 0px #888888 !important;
     cursor: not-allowed;
 }
 textarea.form-control, textarea.klass-form-control {
@@ -67,7 +67,7 @@ textarea.form-control, textarea.klass-form-control {
     border-radius: 2px;
     appearance: none;
     background: #f0f0f0;
-    box-shadow: inset 1px 1px 0 1px #ffffff, inset -1px -1px 0 1px #888888;
+    box-shadow: inset 1px 1px 0 0px #ffffff, inset -1px -1px 0 0px #888888;
     transition: none;
     cursor: pointer;
     margin-top: 3px;
@@ -79,12 +79,12 @@ textarea.form-control, textarea.klass-form-control {
 .form-check-input:checked, .klass-form-check-input:checked {
     background-color: #f0f0f0;
     border-color: transparent;
-    box-shadow: inset 1px 1px 0 1px #ffffff, inset -1px -1px 0 1px #888888;
+    box-shadow: inset 1px 1px 0 0px #ffffff, inset -1px -1px 0 0px #888888;
 }
 .form-check-input:focus, .klass-form-check-input:focus {
     outline: 1px dotted #212529;
     outline-offset: 0;
-    box-shadow: inset 1px 1px 0 1px #ffffff, inset -1px -1px 0 1px #888888;
+    box-shadow: inset 1px 1px 0 0px #ffffff, inset -1px -1px 0 0px #888888;
 }
 .form-check-input[type="checkbox"] { position: relative; }
 .form-check-input[type="checkbox"]::after, .klass-form-check-input[type="checkbox"]::after {
@@ -128,11 +128,11 @@ textarea.form-control, textarea.klass-form-control {
     width: 14px; height: 16px; border-radius: 2px;
     transition: none;
     background: #f0f0f0;
-    box-shadow: inset 1px 1px 0 1px #ffffff, inset -1px -1px 0 1px #888888;
+    box-shadow: inset 1px 1px 0 0px #ffffff, inset -1px -1px 0 0px #888888;
 }
 .form-switch .form-check-input:checked, .form-switch .klass-form-check-input:checked {
     background-color: #0d6efd;
-    box-shadow: inset 1px 1px 0 1px #7bb4ff, inset -1px -1px 0 1px #003c9a;
+    box-shadow: inset 1px 1px 0 0px #7bb4ff, inset -1px -1px 0 01px #003c9a;
     background-image: none;
 }
 .form-switch .form-check-input:checked::after, .form-switch .klass-form-check-input:checked::after { left: 20px; }
@@ -159,7 +159,7 @@ textarea.form-control, textarea.klass-form-control {
     height: 6px;
     background: #f0f0f0;
     border-radius: 2px;
-    box-shadow: inset 1px 1px 0 1px #ffffff, inset -1px -1px 0 1px #888888;
+    box-shadow: inset 1px 1px 0 0px #ffffff, inset -1px -1px 0 0px #888888;
 }
 .form-range::-moz-range-track, .klass-form-range::-moz-range-track {
     height: 6px;
@@ -174,7 +174,7 @@ textarea.form-control, textarea.klass-form-control {
     cursor: pointer;
     transition: none;
     background: #f0f0f0;
-    box-shadow: inset 1px 1px 0 1px #ffffff, inset -1px -1px 0 1px #888888;
+    box-shadow: inset 1px 1px 0 0px #ffffff, inset -1px -1px 0 0px #888888;
 }
 .form-range::-moz-range-thumb, .klass-form-range::-moz-range-thumb {
     width: 14px; height: 16px;
@@ -182,7 +182,7 @@ textarea.form-control, textarea.klass-form-control {
     cursor: pointer;
     transition: none;
     background: #f0f0f0;
-    box-shadow: inset 1px 1px 0 1px #ffffff, inset -1px -1px 0 1px #888888;
+    box-shadow: inset 1px 1px 0 0px #ffffff, inset -1px -1px 0 0px #888888;
 }
 .form-range:active::-webkit-slider-thumb, .klass-form-range:active::-webkit-slider-thumb { box-shadow: inset 2px 2px 0 0 #888888; }
 .form-range:active::-moz-range-thumb, .klass-form-range:active::-moz-range-thumb { box-shadow: inset 2px 2px 0 0 #888888; }
