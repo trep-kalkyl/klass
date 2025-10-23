@@ -40,12 +40,12 @@ body, .klass-body {
   border-radius: 2px;
   transition: none;
   font-size: 1rem;
-  box-shadow: inset 1px 1px 0 1px #888888, inset -1px -1px 0 1px #ffffff;
+  box-shadow: inset 1px 1px 0 0px #888888, inset -1px -1px 0 0px #ffffff;
 }
 .form-control:focus, .klass-form-control:focus,
 .form-select:focus, .klass-form-select:focus {
   border-color: transparent;
-  box-shadow: inset 1px 1px 0 1px #888888, inset -1px -1px 0 1px #ffffff;
+  box-shadow: inset 1px 1px 0 0px #888888, inset -1px -1px 0 0px #ffffff;
   outline: 1px dotted #212529;
   outline-offset: -4px;
 }
@@ -56,7 +56,7 @@ body, .klass-body {
   border-radius: 2px;
   appearance: none;
   background: #f0f0f0;
-  box-shadow: inset 1px 1px 0 1px #ffffff, inset -1px -1px 0 1px #888888;
+  box-shadow: inset 1px 1px 0 0px #ffffff, inset -1px -1px 0 0px #888888;
   transition: none;
   cursor: pointer;
   margin-top: 3px;
@@ -68,12 +68,12 @@ body, .klass-body {
 .form-check-input:checked, .klass-form-check-input:checked {
   background-color: #f0f0f0;
   border-color: transparent;
-  box-shadow: inset 1px 1px 0 1px #ffffff, inset -1px -1px 0 1px #888888;
+  box-shadow: inset 1px 1px 0 0px #ffffff, inset -1px -1px 0 0px #888888;
 }
 .form-check-input:focus, .klass-form-check-input:focus {
   outline: 1px dotted #212529;
   outline-offset: 0;
-  box-shadow: inset 1px 1px 0 1px #ffffff, inset -1px -1px 0 1px #888888;
+  box-shadow: inset 1px 1px 0 0px #ffffff, inset -1px -1px 0 0px #888888;
 }
 .form-check-input[type="checkbox"], .klass-form-check-input[type="checkbox"] { position: relative; }
 .form-check-input[type="checkbox"]::after, .klass-form-check-input[type="checkbox"]::after {
@@ -121,7 +121,7 @@ body, .klass-body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: inset 1px 1px 0 1px #4a7fdc, inset -1px -1px 0 1px #002664;
+  box-shadow: inset 1px 1px 0 0px #4a7fdc, inset -1px -1px 0 0px #002664;
 }
 .modal-title, .klass-modal-title {
   font-size: 1rem;
