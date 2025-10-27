@@ -60,7 +60,7 @@ textarea.form-control, textarea.klass-form-control {
 .form-control.has-left-icon, .klass-form-control.klass-has-left-icon { padding-left: 32px; }
 .form-control.has-right-icon, .klass-form-control.klass-has-right-icon { padding-right: 32px; }
 
-/* 3. Checkbox, radio, switch – Raised style */
+/* 3. Checkbox, radio – Raised style */
 .form-check-input, .klass-form-check-input {
     width: 16px; height: 16px;
     border: 1px solid transparent;
@@ -118,31 +118,79 @@ textarea.form-control, textarea.klass-form-control {
     box-shadow: inset 1px 1px 0 1px #ffffff;
     cursor: not-allowed;
 }
+
+/* 4. Switch – Sunken track with raised sliding button */
 .form-switch .form-check-input, .form-switch .klass-form-check-input {
-    width: 36px; height: 20px;
+    width: 44px;
+    height: 22px;
     position: relative;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    background: #f0f0f0;
+    box-shadow: inset 1px 1px 0 0px #888888, inset -1px -1px 0 0px #ffffff;
+    cursor: pointer;
+    transition: none;
+    background-image: none !important;
+    margin-top: 0;
 }
 .form-switch .form-check-input::after, .form-switch .klass-form-check-input::after {
     content: '';
-    position: absolute; top: 2px; left: 2px;
-    width: 14px; height: 16px; border-radius: 2px;
-    transition: none;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 18px;
+    height: 16px;
+    border-radius: 2px;
     background: #f0f0f0;
     box-shadow: inset 1px 1px 0 0px #ffffff, inset -1px -1px 0 0px #888888;
+    transition: none;
 }
 .form-switch .form-check-input:checked, .form-switch .klass-form-check-input:checked {
-    background-color: #0d6efd;
-    box-shadow: inset 1px 1px 0 0px #7bb4ff, inset -1px -1px 0 01px #003c9a;
+    background-color: #00aa00;
+    box-shadow: inset 1px 1px 0 0px #00ff00, inset -1px -1px 0 0px #006600;
     background-image: none;
 }
-.form-switch .form-check-input:checked::after, .form-switch .klass-form-check-input:checked::after { left: 20px; }
+.form-switch .form-check-input:checked::after, .form-switch .klass-form-check-input:checked::after { 
+    left: 22px; 
+}
+.form-switch .form-check-input:hover::after, .form-switch .klass-form-check-input:hover::after { 
+    background: #e8e8e8; 
+}
+.form-switch .form-check-input:active::after, .form-switch .klass-form-check-input:active::after { 
+    box-shadow: inset 2px 2px 0 0 #888888; 
+}
 .form-switch .form-check-input:focus, .form-switch .klass-form-check-input:focus {
-    box-shadow: none;
     outline: 1px dotted #212529;
     outline-offset: 2px;
 }
+.form-switch .form-check-input:disabled, .form-switch .klass-form-check-input:disabled {
+    background: #d0d0d0;
+    box-shadow: inset 1px 1px 0 1px #ffffff;
+    cursor: not-allowed;
+}
+.form-switch .form-check-input:disabled::after, .form-switch .klass-form-check-input:disabled::after {
+    background: #c0c0c0;
+    box-shadow: inset 1px 1px 0 0px #d8d8d8;
+}
 
-/* 4. Range / slider – Raised style */
+/* Module: Switch with ON/OFF state text */
+.form-check.switch-with-state {
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.form-check.switch-with-state .form-check-label {
+    margin-bottom: 0;
+    cursor: pointer;
+    user-select: none;
+}
+.switch-state {
+    font-weight: 500;
+    color: #666666;
+}
+
+/* 5. Range / slider – Raised style */
 .form-range, .klass-form-range {
     width: 100%;
     background: transparent;
@@ -178,14 +226,13 @@ textarea.form-control, textarea.klass-form-control {
 }
 .form-range::-moz-range-thumb, .klass-form-range::-moz-range-thumb {
     width: 14px; height: 16px;
-    border: none; border-radius: 2px;
+    border-radius: 2px;
+    border: none;
     cursor: pointer;
     transition: none;
     background: #f0f0f0;
     box-shadow: inset 1px 1px 0 0px #ffffff, inset -1px -1px 0 0px #888888;
 }
-.form-range:active::-webkit-slider-thumb, .klass-form-range:active::-webkit-slider-thumb { box-shadow: inset 2px 2px 0 0 #888888; }
-.form-range:active::-moz-range-thumb, .klass-form-range:active::-moz-range-thumb { box-shadow: inset 2px 2px 0 0 #888888; }
 
-/* 5. General rules */
+/* 6. Form labels */
 .form-label { font-weight: 500; margin-bottom: 6px; }
