@@ -62,79 +62,97 @@ textarea.form-control, textarea.klass-form-control {
 
 /* 3. Checkbox, radio – Raised style */
 .form-check-input, .klass-form-check-input {
-    width: 16px; height: 16px;
-    border: 1px solid transparent;
-    border-radius: 2px;
-    appearance: none;
-    background: #f0f0f0;
-    box-shadow: inset 1px 1px 0 0px #ffffff, inset -1px -1px 0 0px #888888;
-    transition: none;
+    width: 16px !important;
+    height: 16px !important;
+    border: 1px solid transparent !important;
+    border-radius: 2px !important;
+    appearance: none !important;
+    background: #f0f0f0 !important;
+    box-shadow: inset 1px 1px 0 0px #ffffff, inset -1px -1px 0 0px #888888 !important;
+    transition: none !important;
     cursor: pointer;
-    margin-top: 3px;
+    margin-top: 3px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
     display: flex;
     align-items: center;
     justify-content: center;
     background-image: none !important;
+    float: none !important;
 }
 .form-check-input:checked, .klass-form-check-input:checked {
-    background-color: #f0f0f0;
-    border-color: transparent;
-    box-shadow: inset 1px 1px 0 0px #ffffff, inset -1px -1px 0 0px #888888;
+    background-color: #f0f0f0 !important;
+    border-color: transparent !important;
+    box-shadow: inset 1px 1px 0 0px #ffffff, inset -1px -1px 0 0px #888888 !important;
 }
 .form-check-input:focus, .klass-form-check-input:focus {
-    outline: 1px dotted #212529;
-    outline-offset: 0;
-    box-shadow: inset 1px 1px 0 0px #ffffff, inset -1px -1px 0 0px #888888;
+    outline: 1px dotted #212529 !important;
+    outline-offset: 0 !important;
+    box-shadow: inset 1px 1px 0 0px #ffffff, inset -1px -1px 0 0px #888888 !important;
+    border-color: transparent !important;
 }
-.form-check-input[type="checkbox"] { position: relative; }
+.form-check-input[type="checkbox"], .klass-form-check-input[type="checkbox"] { 
+    position: relative;
+}
 .form-check-input[type="checkbox"]::after, .klass-form-check-input[type="checkbox"]::after {
     content: '';
     position: absolute;
-    top: 2px; left: 4px;
-    width: 6px; height: 10px;
+    top: 2px; 
+    left: 4px;
+    width: 6px; 
+    height: 10px;
     border: 2px solid transparent;
-    border-top: 0; border-left: 0;
+    border-top: 0; 
+    border-left: 0;
     transform: rotate(45deg);
 }
 .form-check-input[type="checkbox"]:checked::after, .klass-form-check-input[type="checkbox"]:checked::after {
     border-color: #212529;
     filter: drop-shadow(1px 1px 0px rgba(255,255,255,0.7));
 }
-.form-check-input[type="radio"], .klass-form-check-input[type="radio"] { border-radius: 50%; }
+.form-check-input[type="radio"], .klass-form-check-input[type="radio"] { 
+    border-radius: 50% !important;
+}
 .form-check-input[type="radio"]::after, .klass-form-check-input[type="radio"]::after {
     content: '';
     border-radius: 50%;
     background: transparent;
-    width: 6px; height: 6px;
+    width: 6px; 
+    height: 6px;
 }
 .form-check-input[type="radio"]:checked::after, .klass-form-check-input[type="radio"]:checked::after {
     background: #212529;
     filter: drop-shadow(1px 1px 0px rgba(255,255,255,0.7));
 }
-.form-check-input:hover, .klass-form-check-input:hover { background: #e8e8e8; }
-.form-check-input:active, .klass-form-check-input:active { box-shadow: inset 2px 2px 0 0 #888888; }
+.form-check-input:hover, .klass-form-check-input:hover { 
+    background: #e8e8e8 !important;
+}
+.form-check-input:active, .klass-form-check-input:active { 
+    box-shadow: inset 2px 2px 0 0 #888888 !important;
+}
 .form-check-input:disabled, .klass-form-check-input:disabled {
-    background: #f0f0f0;
-    box-shadow: inset 1px 1px 0 1px #ffffff;
+    background: #f0f0f0 !important;
+    box-shadow: inset 1px 1px 0 1px #ffffff !important;
     cursor: not-allowed;
 }
 
 /* 4. Switch – Sunken track with raised sliding button */
 .form-switch .form-check-input, .form-switch .klass-form-check-input {
-    width: 44px;
-    height: 22px;
+    width: 44px !important;
+    height: 22px !important;
     position: relative;
-    border: 1px solid transparent;
-    border-radius: 2px;
-    background: #f0f0f0;
-    box-shadow: inset 1px 1px 0 0px #888888, inset -1px -1px 0 0px #ffffff;
+    border: 1px solid transparent !important;
+    border-radius: 2px !important;
+    background: #f0f0f0 !important;
+    box-shadow: inset 1px 1px 0 0px #888888, inset -1px -1px 0 0px #ffffff !important;
     cursor: pointer;
-    transition: none;
+    transition: none !important;
     background-image: none !important;
-    margin-top: 0;
+    margin-top: 0 !important;
+    margin-left: 0 !important;
 }
 .form-switch .form-check-input::after, .form-switch .klass-form-check-input::after {
-    content: '';
+    content: '' !important;
     position: absolute;
     top: 2px;
     left: 2px;
@@ -146,26 +164,32 @@ textarea.form-control, textarea.klass-form-control {
     transition: none;
 }
 .form-switch .form-check-input:checked, .form-switch .klass-form-check-input:checked {
-    background-color: #00aa00;
-    box-shadow: inset 1px 1px 0 0px #00ff00, inset -1px -1px 0 0px #006600;
-    background-image: none;
+    background-color: #00aa00 !important;
+    box-shadow: inset 1px 1px 0 0px #00ff00, inset -1px -1px 0 0px #006600 !important;
+    background-image: none !important;
+    border-color: transparent !important;
 }
 .form-switch .form-check-input:checked::after, .form-switch .klass-form-check-input:checked::after { 
-    left: 22px; 
+    left: 22px !important;
 }
 .form-switch .form-check-input:hover::after, .form-switch .klass-form-check-input:hover::after { 
-    background: #e8e8e8; 
+    background: #e8e8e8;
 }
 .form-switch .form-check-input:active::after, .form-switch .klass-form-check-input:active::after { 
-    box-shadow: inset 2px 2px 0 0 #888888; 
+    box-shadow: inset 2px 2px 0 0 #888888;
 }
 .form-switch .form-check-input:focus, .form-switch .klass-form-check-input:focus {
-    outline: 1px dotted #212529;
-    outline-offset: 2px;
+    outline: 1px dotted #212529 !important;
+    outline-offset: 2px !important;
+    box-shadow: inset 1px 1px 0 0px #888888, inset -1px -1px 0 0px #ffffff !important;
+    border-color: transparent !important;
+}
+.form-switch .form-check-input:focus:checked, .form-switch .klass-form-check-input:focus:checked {
+    box-shadow: inset 1px 1px 0 0px #00ff00, inset -1px -1px 0 0px #006600 !important;
 }
 .form-switch .form-check-input:disabled, .form-switch .klass-form-check-input:disabled {
-    background: #d0d0d0;
-    box-shadow: inset 1px 1px 0 1px #ffffff;
+    background: #d0d0d0 !important;
+    box-shadow: inset 1px 1px 0 1px #ffffff !important;
     cursor: not-allowed;
 }
 .form-switch .form-check-input:disabled::after, .form-switch .klass-form-check-input:disabled::after {
@@ -175,10 +199,11 @@ textarea.form-control, textarea.klass-form-control {
 
 /* Module: Switch with ON/OFF state text */
 .form-check.switch-with-state {
-    padding-left: 0;
+    padding-left: 0 !important;
     display: flex;
     align-items: center;
     gap: 8px;
+    min-height: auto !important;
 }
 .form-check.switch-with-state .form-check-label {
     margin-bottom: 0;
@@ -217,7 +242,9 @@ textarea.form-control, textarea.klass-form-control {
 }
 .form-range::-webkit-slider-thumb, .klass-form-range::-webkit-slider-thumb {
     appearance: none;
-    width: 14px; height: 16px; margin-top: -5px;
+    width: 14px; 
+    height: 16px; 
+    margin-top: -5px;
     border-radius: 2px;
     cursor: pointer;
     transition: none;
@@ -225,7 +252,8 @@ textarea.form-control, textarea.klass-form-control {
     box-shadow: inset 1px 1px 0 0px #ffffff, inset -1px -1px 0 0px #888888;
 }
 .form-range::-moz-range-thumb, .klass-form-range::-moz-range-thumb {
-    width: 14px; height: 16px;
+    width: 14px; 
+    height: 16px;
     border-radius: 2px;
     border: none;
     cursor: pointer;
@@ -235,4 +263,7 @@ textarea.form-control, textarea.klass-form-control {
 }
 
 /* 6. Form labels */
-.form-label { font-weight: 500; margin-bottom: 6px; }
+.form-label { 
+    font-weight: 500; 
+    margin-bottom: 6px; 
+}
