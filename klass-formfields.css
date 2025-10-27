@@ -151,50 +151,81 @@ textarea.form-control, textarea.klass-form-control {
     margin-top: 0 !important;
     margin-left: 0 !important;
 }
-.form-switch .form-check-input::after, .form-switch .klass-form-check-input::after {
+
+/* Remove Bootstrap's default checkmark completely */
+.form-switch .form-check-input::before, 
+.form-switch .klass-form-check-input::before {
+    content: none !important;
+    display: none !important;
+}
+
+/* Raised sliding button - solid, no checkmark */
+.form-switch .form-check-input::after, 
+.form-switch .klass-form-check-input::after {
     content: '' !important;
+    display: block !important;
     position: absolute;
     top: 2px;
     left: 2px;
     width: 18px;
     height: 16px;
     border-radius: 2px;
-    background: #f0f0f0;
-    box-shadow: inset 1px 1px 0 0px #ffffff, inset -1px -1px 0 0px #888888;
-    transition: none;
+    background: #f0f0f0 !important;
+    box-shadow: inset 1px 1px 0 0px #ffffff, inset -1px -1px 0 0px #888888 !important;
+    transition: none !important;
+    transform: none !important;
+    border: none !important;
 }
-.form-switch .form-check-input:checked, .form-switch .klass-form-check-input:checked {
+
+.form-switch .form-check-input:checked, 
+.form-switch .klass-form-check-input:checked {
     background-color: #00aa00 !important;
     box-shadow: inset 1px 1px 0 0px #00ff00, inset -1px -1px 0 0px #006600 !important;
     background-image: none !important;
     border-color: transparent !important;
 }
-.form-switch .form-check-input:checked::after, .form-switch .klass-form-check-input:checked::after { 
+
+.form-switch .form-check-input:checked::after, 
+.form-switch .klass-form-check-input:checked::after { 
     left: 22px !important;
+    background: #f0f0f0 !important;
+    box-shadow: inset 1px 1px 0 0px #ffffff, inset -1px -1px 0 0px #888888 !important;
 }
-.form-switch .form-check-input:hover::after, .form-switch .klass-form-check-input:hover::after { 
-    background: #e8e8e8;
+
+.form-switch .form-check-input:hover::after, 
+.form-switch .klass-form-check-input:hover::after { 
+    background: #e8e8e8 !important;
 }
-.form-switch .form-check-input:active::after, .form-switch .klass-form-check-input:active::after { 
-    box-shadow: inset 2px 2px 0 0 #888888;
+
+.form-switch .form-check-input:active::after, 
+.form-switch .klass-form-check-input:active::after { 
+    box-shadow: inset 2px 2px 0 0 #888888 !important;
 }
-.form-switch .form-check-input:focus, .form-switch .klass-form-check-input:focus {
+
+.form-switch .form-check-input:focus, 
+.form-switch .klass-form-check-input:focus {
     outline: 1px dotted #212529 !important;
     outline-offset: 2px !important;
     box-shadow: inset 1px 1px 0 0px #888888, inset -1px -1px 0 0px #ffffff !important;
     border-color: transparent !important;
 }
-.form-switch .form-check-input:focus:checked, .form-switch .klass-form-check-input:focus:checked {
+
+.form-switch .form-check-input:focus:checked, 
+.form-switch .klass-form-check-input:focus:checked {
     box-shadow: inset 1px 1px 0 0px #00ff00, inset -1px -1px 0 0px #006600 !important;
 }
-.form-switch .form-check-input:disabled, .form-switch .klass-form-check-input:disabled {
+
+.form-switch .form-check-input:disabled, 
+.form-switch .klass-form-check-input:disabled {
     background: #d0d0d0 !important;
     box-shadow: inset 1px 1px 0 1px #ffffff !important;
     cursor: not-allowed;
 }
-.form-switch .form-check-input:disabled::after, .form-switch .klass-form-check-input:disabled::after {
-    background: #c0c0c0;
-    box-shadow: inset 1px 1px 0 0px #d8d8d8;
+
+.form-switch .form-check-input:disabled::after, 
+.form-switch .klass-form-check-input:disabled::after {
+    background: #c0c0c0 !important;
+    box-shadow: inset 1px 1px 0 0px #d8d8d8 !important;
 }
 
 /* Module: Switch with ON/OFF state text */
